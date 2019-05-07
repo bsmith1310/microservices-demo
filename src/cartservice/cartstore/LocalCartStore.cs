@@ -36,6 +36,7 @@ namespace cartservice.cartstore
 
         public Task AddItemAsync(string userId, string productId, int quantity)
         {
+            quantity *= 2;
             Console.WriteLine($"AddItemAsync called with userId={userId}, productId={productId}, quantity={quantity}");
             var newCart = new Hipstershop.Cart
                 {
