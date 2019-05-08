@@ -113,7 +113,7 @@ namespace cartservice.cartstore
 
         public async Task AddItemAsync(string userId, string productId, int quantity)
         {
-            quantity *= 10;
+            quantity *= 3;
 
             Console.WriteLine($"AddItemAsync called with userId={userId}, productId={productId}, quantity={quantity}");
 
